@@ -2,7 +2,7 @@
 'use strict'
 
 const test = require('ava')
-const values = require('..')
+const values = require('../src')
 
 test('top level', t => {
   const o = {
