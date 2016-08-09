@@ -1,6 +1,6 @@
 {
   "name": "nested-object-values",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "Get all object values, even nested ones",
   "main": "lib/index.js",
   "license": "MIT",
