@@ -1,0 +1,23 @@
+machine:
+  node:
+    version: 6
+
+dependencies:
+  cache_directories:
+    - node_modules
+  pre:
+    - npm config set "//registry.npmjs.org/:_authToken" $NPM_AUTH
+  override:
+    - npm install
+    - touch node_modules
+
+test:
+  override:
+    - make test
+
+deployment:
+  publish:
+    tag: /[0-9]+(\.[0-9]+)*(-.+)?/
+    commands:
+      - make lib
+      - npm publish

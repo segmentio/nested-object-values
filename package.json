@@ -1,0 +1,15 @@
+{
+  "name": "nested-object-values",
+  "version": "0.0.0",
+  "description": "Get all object values, even nested ones",
+  "main": "lib/index.js",
+  "license": "MIT",
+  "devDependencies": {
+    "ava": "^0.16.0",
+    "babel-cli": "^6.11.4",
+    "babel-preset-es2015": "^6.13.2",
+    "babel-preset-stage-0": "^6.5.0",
+    "nyc": "^7.1.0",
+    "standard": "^7.1.2"
+  }
+}
